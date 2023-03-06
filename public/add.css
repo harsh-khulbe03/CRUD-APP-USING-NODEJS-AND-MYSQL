@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width:30%;
+    min-height:60vh;
+    border:1px solid rgb(16, 16, 186);
+    margin:150px 0 0 500px;
+    font-size:20px;
+    background-color: aliceblue;
+    border-radius:10px;
+}
+
+.container h2 {
+    margin:5px 5px 5px 0;
+    text-align: center;
+    color:rgb(7, 7, 92);
+}
+.field {
+    margin:10px;
+}
+
+.field label {
+    display:block;
+    letter-spacing: 1px;
+}
+
+.field input {
+    margin:10px 0;
+    width:430px;
+    height:34px;
+    outline:none;
+    border:1px solid rgb(198, 193, 193);
+    padding:0 10px;
+}
+
+.gender label {
+    padding-left:10px;
+}
+.gender input {
+    margin:10px 7px;
+}
+
+button {
+    padding:6px 10px;
+    margin:10px 85px 0px 10px;
+    background-color: rgb(44, 44, 205);
+    color:white;
+    cursor:pointer;
+}
+
+a {
+    color:rgb(54, 54, 204);
+}

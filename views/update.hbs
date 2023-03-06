@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="search.css"/>
+    <link rel="stylesheet" href="add.css">
+  </head>
+  <body>
+    <div class="box">
+      <form action="/updatesearch">
+        <h3>UPDATE STUDENT</h3>
+        <hr />
+        
+        <label for="phn">Phone no</label>
+        <input
+          type="number"
+          name="phone"
+          id="phn"
+          placeholder="Type phone no. to be searched"
+        />
+        <button type="submit">SEARCH STUDENT</button>
+        
+        <a href="/">BACK TO HOME PAGE</a>
+        {{#if umsg}}
+            <h4>Data updated successfully...</h4>
+        {{/if}}
+
+        {{#if msg2}}
+        <h4>Data not found!</h4>
+        {{/if}}
+      </form>
+    </div>
+
+
+    {{#if msg1}}
+        <div class="container">
+        <form action="/updatestudent">
+            <h2>ADD STUDENT</h2>
+
+            <hr>
+            {{#data}}
+            <div class="field">
+                <label for="">Student name</label>
+                <input type="text" placeholder="Enter Name" name="name" value="{{username}}" required>
+            </div>
+
+            <div class="field">
+                <label for="">Phone no</label>
+                <input type="number" placeholder="Enter Phone Number" name="phone" value="{{phoneno}}" style="background-color:rgb(211, 198, 198); color:rgb(106, 101, 101)" required readonly>
+            </div>
+
+            <div class="field">
+                <label for="">Email Id</label>
+                <input type="email" placeholder="Enter Email Id" name="email" value="{{emailid}}" style="background-color:rgb(210, 199, 199);color:rgb(102, 96, 96)" required readonly>
+            </div>
+
+            <div class="gender">
+                <label for="">Gender</label>
+                <input type="radio" name="gender" value="male" id="">Male
+                <input type="radio" name="gender" value="female" id="">Female
+            </div>
+
+            <button type="submit">UPDATE STUDENT</button>
+            {{/data}}
+            <a href="/">Back to Home page</a>
+            
+        </form>
+    </div>
+        {{/if}}
+
+
+  </body>
+</html>

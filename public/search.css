@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.box {
+    width:40%;
+    min-height:35vh;
+    margin:15px 0 0 390px;
+    border:1px solid black;
+    border-radius: 5px;
+    font-size:25px;
+    background-color: aliceblue;
+}
+.container h3 {
+    margin:9px 0;
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin:10px;
+}
+.container input {
+    width:600px;
+    height:35px;
+    font-size:18px;
+    padding:0 10px;
+    margin:0 0 10px 5px;
+}
+button {
+    padding:10px 8px;
+    margin:10px 210px 0 10px;
+    border-radius: 4px;
+    background-color: rgb(19, 19, 200);
+    color:white;
+    border: none;
+    cursor:pointer;
+
+}
+
+a {
+    font-size: 20px;
+    color:blue;
+}
